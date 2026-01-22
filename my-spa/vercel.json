@@ -1,7 +1,14 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "env": {},
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
