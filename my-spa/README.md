@@ -1,11 +1,34 @@
-# React + Vite
+# my-spa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React Single Page App built with Vite for a React class.
 
-Currently, two official plugins are available:
+## Local setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Install dependencies:
+
+   cd my-spa
+   npm install
+
+2. Start dev server:
+
+   npm run dev
+
+3. Build for production:
+
+   npm run build
+
+## Deploy
+This repository includes a GitHub Actions workflow that builds the `my-spa` app and deploys the generated `dist` folder to the `gh-pages` branch using `peaceiris/actions-gh-pages`.
+
+The site will be published at `https://<your-github-username>.github.io/<repo>/` once the workflow runs on pushes to `main` (ensure GitHub Pages is enabled for the `gh-pages` branch in repository settings).
+
+---
+
+## What I added for the React class
+
+- A Material UI comparison page at `/react-class` (`src/pages/react-class/MuiVsBootstrap.jsx`) demonstrating MUI components.
+- Roboto font linked in `index.html` and MUI packages installed.
+
 
 ## React Compiler
 
