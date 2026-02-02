@@ -18,9 +18,9 @@ A simple React Single Page App built with Vite for a React class.
    npm run build
 
 ## Deploy
-This repository includes a GitHub Actions workflow that builds the `my-spa` app and deploys the generated `dist` folder to the `gh-pages` branch using `peaceiris/actions-gh-pages`.
+This repository includes a GitHub Actions workflow at `.github/workflows/pages.yml` that builds the `my-spa` app (working directory `my-spa`) and publishes the generated `my-spa/dist` artifact to GitHub Pages on pushes to `main`. The workflow uses the official Pages actions and does not require a personal access token.
 
-The site will be published at `https://<your-github-username>.github.io/<repo>/` once the workflow runs on pushes to `main` (ensure GitHub Pages is enabled for the `gh-pages` branch in repository settings).
+After the workflow runs, the site will be published at `https://<your-github-username>.github.io/<repo>/` (ensure GitHub Pages is enabled for this repository in Settings).
 
 ---
 
